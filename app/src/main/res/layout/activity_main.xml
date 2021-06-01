@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B33250C8"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/SendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        android:layout_toRightOf="@+id/ChatText"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="1000dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="30dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="0px"
+        android:transcriptMode="alwaysScroll" />
+
+    <EditText
+        android:id="@+id/ChatText"
+        android:layout_width="300dp"
+        android:layout_height="250px"
+        android:layout_marginLeft   ="16dp"
+        android:layout_marginTop="620dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+</RelativeLayout>

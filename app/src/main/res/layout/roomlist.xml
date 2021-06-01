@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_room"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="채팅방 만들기"
+
+        />
+
+    <Button
+        android:id="@+id/roominBtn"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="채팅방 들어가기"
+        android:layout_toRightOf="@id/createBtn"
+
+        />
+
+</RelativeLayout>
