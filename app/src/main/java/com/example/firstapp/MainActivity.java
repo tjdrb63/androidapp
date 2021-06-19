@@ -1,17 +1,19 @@
 package com.example.firstapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.*;
 import androidx.annotation.*;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.*;
 import java.util.*;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private ArrayList<MessageItem> Msgitems =new ArrayList<>(); //정보저장할 리스트
     private Button sendBtn;
     private EditText et;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // 타이틀 없애기
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent(); // intent로 채팅방 아이디 받아옴
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.chatList);
         listView.setAdapter(adapter);  //list에 어뎁터 넣기 MshItems에 따라 바뀜
 
-        getSupportActionBar().setTitle(roomId); //제목
+        //getSupportActionBar().setTitle(roomId); //제목
 
 
 

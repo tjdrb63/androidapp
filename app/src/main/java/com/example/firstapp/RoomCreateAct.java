@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -17,16 +18,30 @@ public class RoomCreateAct extends Activity {
         private EditText rname;
         private Button conBtn, canBtn;
         private Intent intent = new Intent();
-
+        private TextView rtext1, rtext2 ;
     public  void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             requestWindowFeature(Window.FEATURE_NO_TITLE); // 타이틀 없애기
             setContentView(R.layout.makeroombox);
+
+            rtext1 = findViewById(R.id.roomtext1);
+            rtext2 = findViewById(R.id.roomtext2);
             rname = findViewById(R.id.rnametext);
             conBtn = findViewById(R.id.confirmBtn);
             canBtn = findViewById(R.id.cancleBtn);
+            Intent rintent = getIntent();
+            String num = (String)rintent.getSerializableExtra("num");
 
+            if(num.equals("1")){
+                rtext1.setText("채팅방 이름");
+                rtext2.setText("원하시는 이름을 입력해주세요");
 
+            }
+            else if(num.equals("2")){
+                rtext1.setText("채팅방 번호");
+                rtext2.setText("채팅방 번호를 입력해주세요");
+
+            }
             conBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -45,6 +60,8 @@ public class RoomCreateAct extends Activity {
             canBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Log.d("Chat","Dd");
+                    setResult(RESULT_CANCELED,intent);
                     finish();
                 }
             });

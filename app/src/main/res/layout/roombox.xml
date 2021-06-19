@@ -6,36 +6,25 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/roomTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="50dp"
+        android:text="127002229"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
         android:id="@+id/RoomTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Room name"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textSize="20dp"
         />
-
-    <TextView
-        android:id="@+id/RoomContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/RoomTitle"
-        android:text="ChatChatChatChatChatChat"
-        android:layout_marginLeft="20dp"
-        android:maxWidth="200dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        />
-    <TextView
-        android:id="@+id/RoomTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="00:00"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/RoomTitle"
-        />
-
 
 
 </RelativeLayout>

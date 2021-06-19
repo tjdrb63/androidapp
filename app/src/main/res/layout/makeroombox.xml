@@ -7,20 +7,20 @@
 
     <Button
         android:id="@+id/confirmBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="만들기"
         android:layout_marginTop="80dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         />
 
     <Button
         android:id="@+id/cancleBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="취소"
         android:layout_marginTop="80dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf = "@id/confirmBtn"
         />
 
@@ -28,25 +28,25 @@
         android:id="@+id/rnametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="9"
-        android:height="27dp"
+        android:ems="10"
+        android:height="30dp"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:layout_marginLeft="10dp"
-        android:background="@color/purple_200"
+        android:background="@color/teal_200"
         android:layout_toRightOf="@id/roomtext1"
         android:textColor="@color/black"
         />
 
     <TextView
         android:id="@+id/roomtext2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:text="알림내용 여기에 작성하시요"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
         android:textColor="@color/black"
         />
 
@@ -54,11 +54,11 @@
         android:id="@+id/roomtext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="45dp"
         android:text="채팅방"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="18dp"
     />
 </RelativeLayout>
  

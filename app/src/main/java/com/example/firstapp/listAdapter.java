@@ -47,13 +47,10 @@ public class listAdapter extends BaseAdapter {
                 view = inflater.inflate(layout,viewGroup,false);
             }
 
-        TextView RoomContent = view.findViewById(R.id.RoomContent);
-        TextView RoomTime = view.findViewById(R.id.RoomTime);
-        TextView RoomTitle = view.findViewById(R.id.RoomTitle);
-
-        RoomContent.setText("대화내용 넣어야함");
-        RoomTime.setText("3:33");
+            TextView RoomTitle = view.findViewById(R.id.RoomTitle);
+            TextView RoomTitle2= view.findViewById(R.id.roomTitle2);
         RoomTitle.setText(item.getRoomName());
+        RoomTitle2.setText(item.getRoomId());
         return view;
     }
 }
