@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,7 +30,48 @@
         android:layout_marginTop="5dp"
         android:text="채팅방 들어가기"
         android:layout_toRightOf="@id/createBtn"
+        />
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/fab_main"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/ic_confirm_foreground"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_above="@+id/fab_sub1"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/ic_down_foreground"
+        app:fabSize="normal"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/ic_add_foreground"
+        app:fabSize="normal"
         />
 
 </RelativeLayout>
