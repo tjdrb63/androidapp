@@ -75,7 +75,7 @@ public class ChatAdapter extends BaseAdapter {
         TextView tvTime = view.findViewById(R.id.tv_time);
 
        // iv.setImageResource(0);
-        tvName.setText(item.getName());
+        tvName.setText(item.getuserId());
         tvMsg.setText(item.getMessage());
         tvTime.setText(item.getTime());
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B33250C8"
+    tools:context=".ChatActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/actfab_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_menu"
+        android:layout_marginLeft="10dp"
+        app:backgroundTint="#ffffff"
+
+        />
+
+    <Button
+        android:id="@+id/SendBtn"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="보내기"
+        android:layout_toRightOf="@+id/ChatText"
+        android:layout_marginTop="620dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+
+        />
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="1000dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="70dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="0px"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/ChatText"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft ="5dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPersonName"
+        android:text=""
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/fabbutton"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_toLeftOf="@id/actfab_main"
+        android:text="초대코드 복사"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/fabbutton2"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:text="채팅방 나가기"
+        android:layout_toLeftOf="@id/fabbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="roomname"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:background="#B33240c8"
+        />
+</RelativeLayout>

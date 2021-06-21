@@ -11,7 +11,6 @@ public class UserItem {
     public UserItem(){
 
     }
-
     public String getUserId() {
         return UserId;
     }

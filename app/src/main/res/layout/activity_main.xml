@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#B33250C8"
-    tools:context=".MainActivity">
-
+    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/SendBtn"
+        android:id="@+id/button"
         android:layout_width="110dp"
         android:layout_height="70dp"
-        android:text="보내기"
-        android:layout_toRightOf="@+id/ChatText"
-        android:layout_marginTop="620dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttonstyle"
+        android:text="홈"
+        android:textColor="@color/white" />
 
-        />
-
-    <ListView
-        android:id="@+id/chatList"
-        android:layout_width="1000dp"
-        android:layout_height="640dp"
-        android:layout_marginTop="10dp"
-        android:divider="#FFFFFF"
-        android:dividerHeight="0px"
-        android:transcriptMode="alwaysScroll" />
-
-    <EditText
-
-    android:id="@+id/ChatText"
-        android:layout_width="300dp"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
         android:layout_height="70dp"
-        android:layout_marginLeft ="5dp"
-        android:layout_marginBottom="5dp"
-        android:inputType="textPersonName"
-        android:text=""
-        android:background="@color/white"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_toRightOf="@+id/button"
+        android:background="@drawable/buttonstyle"
+        android:text="시간표"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:background="@drawable/buttonstyle"
+        android:text="게시판"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonstyle"
+        android:text="채팅방"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/buttonBackground"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1e90ff" />
+
 </RelativeLayout>
